@@ -12,20 +12,17 @@ public class ArrayCopier {
 		this.src=src;
 		this.dst=dst;
 		
-		if(dst.length>src.length){
-			for (int i=0;i<src.length;i++){
+		if(src.length>dst.length){
+			for (int i=0;i<dst.length;i++){
 				dst[i]=src[i];
 			}
 		}else {
 			for (int i=0;i<dst.length;i++){
-				dst[i]=src[i];
+				if(i>src.length-1){
+					dst[i]=0;
+				}else dst[i]=src[i];
+				
 			}
 		}
-	}
-	
-	public int[] getDst(){
-		return dst;
-		
-	}
-	
+	}	
 }
