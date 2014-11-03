@@ -3,9 +3,10 @@ import java.lang.reflect.Array;
 
 public class ArrayCopier {
 	private int[] src;
-	private int[] dst=new int[10];
-	public ArrayCopier(int[] src) {
+	private int[] dst;
+	public ArrayCopier(int[] src, int[] dst) {
 		this.src=src;
+		this.dst=dst;
 	}
 	public void copy(int[] src){
 		this.src=src;
