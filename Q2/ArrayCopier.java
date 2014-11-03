@@ -1,6 +1,3 @@
-import java.lang.reflect.Array;
-
-
 public class ArrayCopier {
 	private int[] src;
 	private int[] dst;
@@ -10,7 +7,6 @@ public class ArrayCopier {
 	}
 	public void copy(int[] src){
 		this.src=src;
-		this.dst=dst;
 		
 		if(src.length>dst.length){
 			for (int i=0;i<dst.length;i++){
